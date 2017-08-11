@@ -1,0 +1,4411 @@
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2015 The MathWorks, Inc.
+                   R2015a (8.5.0.197613) 64-bit (glnxa64)
+                             February 12, 2015
+
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+
+	Academic License
+
+
+2D lattice calculation commenced on | 15-Jul-2016 22:00:26
+
+|----- MULTITHREADING SETUP -----|
+Current Matlab pool is 0 (0 is fine - no parallel loops)
+Current number of (active) computational threads is 1
+Number of available ppn on cluster is 20
+     20 maxNumCompThreads opened [for implicitparallelism (previously set to 1)].
+
+
+|----- SETUP -----|
+  lattice type | triangular
+         kspec | irrfbz
+            Ns | 149
+         Ncirc | 64
+         adivd | 2
+            Nk | 101
+       savephi | 0
+
+|----- MESHING UNIT CELL -----|
+Checking Geometry
+Estimating local geometry feature size
+Quadtree decomposition
+Forming element size function
+Triangulating quadtree
+Placing Boundary Nodes
+Smoothing Boundaries
+Initialising Mesh 
+Iteration   Convergence (%)
+ 1           2.0
+ 2           16.8
+ 3           30.9
+ 4           36.1
+ 5           48.9
+ 6           51.7
+ 7           82.9
+ 8           100.0
+            Time: 1.5100
+       Triangles: 2276
+           Nodes: 1242
+    Mean_quality: 0.9683
+     Min_quality: 0.7858
+
+|----- LATTICE DISPERSION CALCULATION (101 k-points) -----|
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.1 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.37 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.5 sec
+--- DISPERSION LOOP 1/101 (2.36/238.75 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.37 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.9 sec
+--- DISPERSION LOOP 2/101 (4.77/240.78 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.1 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.7 sec
+--- DISPERSION LOOP 3/101 (7.14/240.39 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 4/101 (9.52/240.26 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 5/101 (11.89/240.11 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.46 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.7 sec
+--- DISPERSION LOOP 6/101 (14.29/240.48 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 7/101 (16.69/240.75 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.4 sec
+--- DISPERSION LOOP 8/101 (19.08/240.82 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 9/101 (21.46/240.88 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 10/101 (23.85/240.91 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.1 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.6 sec
+--- DISPERSION LOOP 11/101 (26.22/240.77 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.45 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 12/101 (28.61/240.80 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.1 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 13/101 (30.98/240.69 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.45 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 14/101 (33.35/240.57 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 15/101 (35.72/240.53 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.46 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 16/101 (38.10/240.49 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 17/101 (40.48/240.53 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 18/101 (42.86/240.48 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.45 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 19/101 (45.25/240.56 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+--- DISPERSION LOOP 20/101 (47.63/240.52 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 35.4 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 35.3 sec
+--- DISPERSION LOOP 21/101 (50.11/240.99 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.45 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.4 sec
+--- DISPERSION LOOP 22/101 (52.50/241.03 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.44 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 23/101 (54.90/241.06 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 24/101 (57.27/241.01 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 25/101 (59.66/241.02 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 26/101 (62.05/241.03 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 27/101 (64.42/240.99 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.7 sec
+--- DISPERSION LOOP 28/101 (66.81/241.00 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 29/101 (69.20/240.99 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.2 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 30/101 (71.57/240.95 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.46 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 40.1 sec
+--- DISPERSION LOOP 31/101 (73.84/240.58 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.8 sec
+--- DISPERSION LOOP 32/101 (76.01/239.91 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.45 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.3 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 33/101 (78.21/239.37 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 34/101 (80.38/238.77 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 35/101 (82.53/238.16 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.8 sec
+--- DISPERSION LOOP 36/101 (84.71/237.66 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 37/101 (86.91/237.23 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 38/101 (89.07/236.74 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 39/101 (91.22/236.24 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 40/101 (93.39/235.80 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 41/101 (95.55/235.37 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 37.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+--- DISPERSION LOOP 42/101 (97.79/235.15 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 43/101 (99.92/234.69 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.44 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 34.4 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.7 sec
+--- DISPERSION LOOP 44/101 (102.14/234.45 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+--- DISPERSION LOOP 45/101 (104.30/234.10 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 34.0 sec
+--- DISPERSION LOOP 46/101 (106.50/233.83 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+--- DISPERSION LOOP 47/101 (108.67/233.52 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+--- DISPERSION LOOP 48/101 (110.79/233.13 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.3 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 34.2 sec
+--- DISPERSION LOOP 49/101 (113.00/232.92 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 50/101 (115.16/232.62 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+--- DISPERSION LOOP 51/101 (117.30/232.30 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 52/101 (119.44/231.99 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+--- DISPERSION LOOP 53/101 (121.62/231.76 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 54/101 (123.71/231.37 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 55/101 (125.85/231.10 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.45 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.4 sec
+--- DISPERSION LOOP 56/101 (128.00/230.85 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 57/101 (130.17/230.65 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 58/101 (132.31/230.40 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 59/101 (134.46/230.18 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 60/101 (136.62/229.98 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 61/101 (138.77/229.77 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.3 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.5 sec
+--- DISPERSION LOOP 62/101 (140.93/229.58 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.3 sec
+--- DISPERSION LOOP 63/101 (143.08/229.38 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 64/101 (145.24/229.20 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.4 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 65/101 (147.41/229.05 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 66/101 (149.62/228.96 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.4 sec
+--- DISPERSION LOOP 67/101 (151.77/228.79 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+--- DISPERSION LOOP 68/101 (153.92/228.62 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.44 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 34.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 69/101 (156.11/228.50 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 70/101 (158.27/228.36 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 71/101 (160.39/228.16 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 72/101 (162.51/227.97 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+--- DISPERSION LOOP 73/101 (164.64/227.79 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 74/101 (166.78/227.64 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 75/101 (168.91/227.46 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 76/101 (171.05/227.31 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 77/101 (173.20/227.18 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.3 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 78/101 (175.40/227.13 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.2 sec
+--- DISPERSION LOOP 79/101 (177.56/227.01 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 80/101 (179.71/226.89 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 81/101 (181.89/226.80 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 82/101 (184.02/226.66 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 83/101 (186.15/226.52 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 84/101 (188.30/226.41 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 85/101 (190.43/226.28 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.3 sec
+--- DISPERSION LOOP 86/101 (192.55/226.14 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.4 sec
+--- DISPERSION LOOP 87/101 (194.75/226.09 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.4 sec
+--- DISPERSION LOOP 88/101 (196.94/226.03 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 89/101 (199.08/225.93 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.41 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 34.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 35.4 sec
+--- DISPERSION LOOP 90/101 (201.36/225.97 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+--- DISPERSION LOOP 91/101 (203.49/225.85 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.43 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.8 sec
+--- DISPERSION LOOP 92/101 (205.67/225.79 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.5 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.1 sec
+--- DISPERSION LOOP 93/101 (207.84/225.72 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+--- DISPERSION LOOP 94/101 (209.97/225.60 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.9 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 95/101 (212.14/225.54 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.44 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 36.1 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 96/101 (214.34/225.51 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.0 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 33.8 sec
+--- DISPERSION LOOP 97/101 (216.47/225.40 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 98/101 (218.62/225.31 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.42 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+--- DISPERSION LOOP 99/101 (220.74/225.20 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 0.9 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.40 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.6 sec
+--- DISPERSION LOOP 100/101 (222.88/225.11 min) ---
+
+Calculating eigenenergies of specified mesh (1169 nodes and 2276 elements)
+Calculating system matrices
+   Coulomb matrix V calculated in 1.0 min
+   Isotropic differential matrices DL and DRi calculated in 0.0 min
+   Anisotropic part of differential matrix DRa calculated in 0.0 min
+Finding eigenvalues for each of the 3 model-input(s)
+
+   Model 1/3 | Parameters:
+       type: 'isotropic'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: []
+     system: []
+     approx: 'intra'
+    keep_eV: [0 0.2000]
+
+   Eigenvalues/vectors computed in 0.1 min (1169 lowest eigenpartners output)
+
+   Model 2/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 4
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.39 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.7 sec
+
+   Model 3/3 | Parameters:
+       type: 'magneto'
+      ef_eV: 0.2000
+          L: 4.0000e-07
+          B: 8
+     system: 'graphene'
+     approx: []
+    keep_eV: [0 0.2000]
+
+   Companion matrix for cubic eigenvalue problem created in 0.38 sec
+   Cubic eigenvalue problem of 1169 x 1169 system solved in 32.8 sec
+--- DISPERSION LOOP 101/101 (225.03/225.03 min) ---
+
+
+
+ All data saved to   | ../output/lattice/lattice_irrfbz_Ns149_Ncirc64_savephi0.mat
+
+Calculated finished on   | 16-Jul-2016 01:45:31
+  
+ans =
+
+../output/lattice/lattice_irrfbz_Ns149_Ncirc64_savephi0.mat
+
+>> 
