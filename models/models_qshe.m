@@ -1,0 +1,3 @@
+ef_eV = .4; L = 400e-9;
+models = struct('type','isotropic','ef_eV',ef_eV,'L',L,...
+    'approx','intra','keep_eV',[0,1.5*ef_eV]);
