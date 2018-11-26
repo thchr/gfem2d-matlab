@@ -11,7 +11,7 @@ t = blochmesh.t;
 areas = blochmesh.area;
 remesh = blochmesh.remesh;
 
-if all(size(k) == [1,2]); %Ensure that k is a column vector
+if all(size(k) == [1,2]) %Ensure that k is a column vector
     k = k.';
 end
 

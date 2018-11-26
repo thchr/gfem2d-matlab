@@ -98,11 +98,18 @@ function [zetaeig,rhoeig] = forceSymmetryInPairs(sympairs,mesh,zetaeig,rhoeig)
 %(https://en.wikipedia.org/wiki/Gram%E2%80%93Schmidt_process#Algorithm)
 
     fprintf('   Symmetry enforced for the following mode indices:\n\t\t')
-    for pair = sympairs; fprintf('[%g,%g] & ',pair{:}(1),pair{:}(2)); end; fprintf('\b\b\n\n');
-    
     for paircell = sympairs
         pair = paircell{:};
-        
+        if numel(pair) == 2
+            fprintf('[%g,%g] & ',pair(1),pair(2)); 
+        elseif numel(pair) == 1  %If there's not two elements in 'pair' we ignore the entry
+            fprintf('[%g] (warning; no action taken for single-member "pairs") & ',pair)
+            continue
+        else %There's never a reason to have ~= 1 or ~= 2 elements; must be a mistake then: warn about it.
+            warning('pair must be a two-element array (_or_, if optionally a single element array\n')
+            continue
+        end
+       
         %Average the "symmetric-forced" eigenvalues to force equality
         zetaeig(pair) = sum(zetaeig(pair))/numel(pair); 
         overlap_ab = integrateMeshFunction(mesh.p,mesh.t,... %The first element of this array is <a|a> and the next is 
@@ -113,3 +120,4 @@ function [zetaeig,rhoeig] = forceSymmetryInPairs(sympairs,mesh,zetaeig,rhoeig)
             overlap_ab(2)/overlap_ab(1)*rhoeig(:,pair(1));
         
     end
+    fprintf('\b\b\n\n');

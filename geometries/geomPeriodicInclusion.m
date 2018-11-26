@@ -23,15 +23,7 @@ function [blochmesh,origmesh,bnd] = geomPeriodicInclusion(R,inclusion,Nuc,hdataf
 
 %% DEFAULT VALUES AND INITIALIZATION
 
-%Default lattice vectors (if R is empty): a square of side 1
-if ~exist('R','var') || isempty(R) || all(strcmpi(R,'square'))
-    clear R;   R{1} = [1,0]; R{2} = [0,1];
-elseif strcmpi(R,'triangular');
-    clear R;   R{1} = [1,0]; R{2} = [cosd(60),sind(60)];
-elseif all(size(R) == [1,1]) %If R is a scalar, we interpret it as the
-    Rl = R; R=[];            %width/height of a square unit cell
-    R{1} = Rl*[1,0]; R{2} = Rl*[0,1];
-end
+R = calcDirect(R);
 rotR{1} = [-R{1}(2),R{1}(1)]; %Rotated values for wiggling
 rotR{2} = [-R{2}(2),R{2}(1)];
 
@@ -48,18 +40,21 @@ for nn = 1:2
     end
 end
 
+
 %Default inclusion and checking of duplicates in inclusion
-if ~exist('inclusion','var') || strcmpi(inclusion,'disk') %Default inclusion
+if ~exist('inclusion','var') || (ischar(inclusion) && strcmpi(inclusion,'disk')) %Default inclusion
     ncirc = 150;                                          %is a 1/4 radius disk
     theta = linspace(0,2*pi,ncirc+1); theta = theta(1:end-1);
     inclusion = .25*[cos(theta);sin(theta)].';
 else                                    %Ensure no duplicates in inclusion
-    newinclusion = unique(inclusion,'rows','stable');
-    if numel(newinclusion) ~= numel(inclusion);  %Warn if duplicates found
-        inclusion = newinclusion;
-        warning('Duplicates in ''inclusion'' were removed')
-    else
-        clear newinclusion
+    if ~iscell(inclusion)
+        newinclusion = unique(inclusion,'rows','stable');
+        if numel(newinclusion) ~= numel(inclusion);  %Warn if duplicates found
+            inclusion = newinclusion;
+            warning('Duplicates in ''inclusion'' were removed')
+        else
+            clear newinclusion
+        end
     end
 end
 

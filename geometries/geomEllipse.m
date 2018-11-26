@@ -1,8 +1,8 @@
 function mesh = geomEllipse(r,ntheta,hdata,plotmesh)
 %Create the triangulation data 'p' (points) and 't' (connectedness) for an
-%annulus of outer radius 1 and inner radius 'rIn' (<1) with 'nThetaIn' and 
-%'nThetaOut' boundary points (in the small and large circles, respectively)
-%and (possibly specified) mesh characteristics specified by 'hdata'.
+%ellipse of semiradii r(1) and r(2) with ntheta points along its periphery.
+%Mesh characteristics specified by 'hdata' (optional). Plot mesh if
+%plotmesh == 1.
 
 % Default values
 if ~exist('r','var') || isempty(r); r = [1,.75]; end
@@ -27,6 +27,7 @@ end
 % Make mesh
 [p,t,stats] = mesh2d(node,cnct,hdata,struct('plot',false)); disp(stats);
 [mesh.p,mesh.t] = smoothmesh(p,t); 
+mesh.edge = node; mesh.edgecnct = cnct; 
 
 % If requested, plot the mesh
 if plotmesh == 1

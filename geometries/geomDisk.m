@@ -1,4 +1,4 @@
-function [p,t] = geomDisk(ntheta,hdata,plotmesh)
+function [p,t,node,cnct] = geomDisk(ntheta,hdata,plotmesh)
 %CALL:          [p,t] = geomDisk(ntheta,hdata,plotmesh)
 %DESCRIPTION: Create the triangulation data 'p' (points) and 't' 
 %(connectedness) for a disk with 'ntheta' boundary points and (possibly
@@ -9,6 +9,9 @@ function [p,t] = geomDisk(ntheta,hdata,plotmesh)
 if nargin == 0 || isempty(ntheta); ntheta = 402; end
 theta  = linspace(-pi,pi,ntheta+1); theta = theta(1:end-1).';
 node   = [cos(theta) sin(theta)];
+
+% Connectedness of node points
+cnct = [(1:ntheta).',[2:ntheta,1].'];
 
 %Mesh density via hdata
 if ~exist('hdata') || isempty(hdata)
@@ -22,7 +25,7 @@ elseif isnumeric(hdata)
 end
 
 % Make mesh
-[p,t,stats] = mesh2d(node,[],hdata,struct('plot',false)); disp(stats)
+[p,t,stats] = mesh2d(node,cnct,hdata,struct('plot',false)); disp(stats)
 [p,t] = smoothmesh(p,t);
 
 %Figure

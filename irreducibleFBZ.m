@@ -1,5 +1,5 @@
 function [kvec,kplot,kmark,FBZ,irrFBZ] = irreducibleFBZ(type,Nmin,plotchoice)
-%CALL:       [kvec,kplot,kmark] = irreducibleFBZ(type,Nmin,plotchoice)
+%CALL: [kvec,kplot,kmark,FBZ,irrFBZ] = irreducibleFBZ(type,Nmin,plotchoice)
 %DESCRIPTION: Provides a list of k-points in the irreducible Brillouin zone 
 %             of the specified type of lattice ('type') at Nmin kpoints.
 %INPUT:  type | indicate type of lattice (assumed in unit-form). Options:
@@ -73,7 +73,7 @@ Ncur(2:end) = Ncur(2:end)+1;
 kvec = []; %Preallocate
 kmark.n = [1, 1];
 for kcur = 1:size(irrFBZ,1)
-    if kcur == size(irrFBZ,1);
+    if kcur == size(irrFBZ,1)
         knext = 1;
     else
         knext = kcur+1;
@@ -81,7 +81,7 @@ for kcur = 1:size(irrFBZ,1)
     %Ncur = round(N*norm(irrFBZ(kcur,:)-irrFBZ(knext,:),2)/irrFBZtotlen);
     kvecadd = [linspace(irrFBZ(kcur,1),irrFBZ(knext,1),Ncur(kcur)).', ...
                linspace(irrFBZ(kcur,2),irrFBZ(knext,2),Ncur(kcur)).'];
-    if kcur == 1;
+    if kcur == 1
         kvec = [kvec; kvecadd(1:end,:)];
     else %Avoid double points at vertex points (apart from start and end)
         kvec = [kvec; kvecadd(2:end,:)];

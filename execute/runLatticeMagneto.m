@@ -24,22 +24,25 @@ if nargin < 5 || ~exist('adivd','var') || isempty(adivd)
     adivd = 2; %Period divided by inclusion diameter
 end
 if nargin < 6 || ~exist('Nk','var') || isempty(Nk)
-    if ischar(kspec);  switch kspec                %Number of k-points
+    if ischar(kspec)  
+        switch kspec                %Number of k-points
             case 'irrfbz'; Nk = 101;  case 'projx';  Nk = [49,11];
         end
-    else  Nk = []; end
+    else
+        Nk = [];
+    end
 end
 if nargin < 7 || ~exist('savephi','var') || isempty(savephi)
-    savephi = 0; %Whether to save the potential phi (1) or not (0)
+    savephi = 0; %Whether to save the potential phi (==1) or not (==0) (save rho as well is == 2)
 end
 if nargin < 9 || ~exist('addstr','var')
     addstr = []; %Whether to add a modifier string to the savename ([] = nothing added)
-elseif ~isempty(addstr)
+elseif ~isempty(addstr) && addstr(1)~='_'
     addstr = ['_' addstr];
 end 
 
 %% PRINT SETUP
-if iscellstr(kspec); %Expect { kx, ky } with kx,ky entries as _strings_
+if iscellstr(kspec) %Expect { kx, ky } with kx,ky entries as _strings_
     if numel(kspec) == 2;  kspec{3} = 'gridded';  end %Default; gridded (otherwise; list)
     %If kspec is supplied as a cell, we need to take this
     %into account for the following fprint command
@@ -75,7 +78,7 @@ if ischar(kspec)
 elseif iscellstr(kspec)
     
     kx = eval(kspec{1}); ky = eval(kspec{2});
-    if strcmpi(kspec{3},'gridded');  %In this case, we interpret kspec to be intended as a gridded list
+    if strcmpi(kspec{3},'gridded')  %In this case, we interpret kspec to be intended as a gridded list
         [kx,ky] = meshgrid(kx,ky);
     end
     kvec.x = kx.'; kvec.y = ky.'; Nk = numel(kx);          clear kx ky
@@ -94,7 +97,7 @@ switch kspecstr
         fprintf('%-.3f,',unique(kvec.x)); fprintf('\b]\n   [ky] = ['); fprintf('%-.3f,',unique(kvec.y)); fprintf('\b]');
     case 'irrfbz'
         fprintf('First BZ spanned by k-point pairs:\n   [kx,ky] = ')
-        fprintf('[%-.3f,%-.3f] ',[kvec.x(:),kvec.y(:)].')
+        fprintf('[%-.3f,%-.3f]',[kvec.x(:),kvec.y(:)].')
 end
 
 
@@ -115,7 +118,7 @@ elseif ischar(models) %Evaluate a script which describes a set of models
     clear modelscall
 end
 %Print model type
-fprintf('%g ''setup-models'' are considered:\n',numel(models))
+fprintf('\n\n%g ''setup-models'' are considered:\n',numel(models))
 modelsprint = struct2table(models); disp(modelsprint); clear modelsprint
 
 %% ACTUAL CALCULATION AND PLOTTING
@@ -131,16 +134,22 @@ for kk2 = size(kvec.x,2):-1:1 %This loop is only relevant in case kspec = 'irrfb
             eneeig_eV_cell = calcEigenEnergiesAny(mesh,models,bloch);
         elseif savephi == 1 %Also save the eigenpotentials
             [eneeig_eV_cell,~,phi_cell] = calcEigenEnergiesAny(mesh,models,bloch);
+        elseif savephi == 2 %Save both eigenpotentials and eigendensitites
+            [eneeig_eV_cell,rho_cell,phi_cell] = calcEigenEnergiesAny(mesh,models,bloch);
         end
-        if numel(models) == 1;
-            ene_temp = eneeig_eV_cell; clear eneeig_eV_cell; eneeig_eV_cell{1} = ene_temp; clear ene_temp;
-            if savephi == 1;
-                phi_temp = phi_cell; clear phi_cell; phi_cell{1} = phi_temp; clear phi_temp;
+        
+        %If there's only one model, there's no need to have an extra cell-
+        %index (and the output is also not a cell, just an array)
+        if numel(models)==1
+            eneeig_eV(1:numel(eneeig_eV_cell),kk1,kk2) = eneeig_eV_cell;
+            if savephi >= 1; phieig{kk1,kk2} = phi_cell; end
+            if savephi == 2; rhoeig{kk1,kk2} = rho_cell; end
+        else %Otherwise, we group in cell so that each model is in its own cell
+            for mm = 1:numel(models)
+                eneeig_eV{mm}(1:numel(eneeig_eV_cell{mm}),kk1,kk2) = eneeig_eV_cell{mm};
+                if savephi >= 1; phieig{mm}{kk1,kk2} = phi_cell{mm}; end
+                if savephi == 2; rhoeig{mm}{kk1,kk2} = rho_cell{mm}; end
             end
-        end
-        for mm = 1:numel(models)
-            eneeig_eV{mm}(1:numel(eneeig_eV_cell{mm}),kk1,kk2) = eneeig_eV_cell{mm};
-            if savephi == 1;    phieig{mm}{kk1,kk2} = phi_cell{mm};    end
         end
         
         %--- PRINT PROGRESS ---
@@ -153,8 +162,26 @@ end
 %a valid zero mode; i.e. they do not reside at kvec = [0,0])
 for mm = 1:numel(models)
     for kk2 = size(kvec.x,2):-1:1
-        [rowz,colz] = find(eneeig_eV{mm}(:,:,kk2) == 0);
-        eneeig_eV{mm}(sub2ind(size(eneeig_eV{mm}),rowz(rowz~=1),colz(rowz~=1),repmat(kk2,nnz(rowz~=1),1))) = NaN; %This sets any element whose row is larger than 1 and whose value is equal to zero to NaN
+        %Find the elements of eneeig_eV which equal zero
+        if numel(models) == 1
+            [rowz,colz] = find(eneeig_eV(:,:,kk2) == 0);
+        else
+            [rowz,colz] = find(eneeig_eV{mm}(:,:,kk2) == 0);
+        end
+        %Set any =0-element to NaN, unless it is the first band at k=[0,0]
+        for bb = rowz(:)'           %Matlab iterates over columns, so make sure this is a row vector
+            if bb ~= 1
+                for kk1 = colz(:).' %Matlab iterates over columns, so make sure this is a row vector
+                    if kvec.x(kk1,kk2) ~= 0 || kvec.y(kk1,kk2) ~= 0
+                        if numel(models) == 1
+                            eneeig_eV(bb,kk1,kk2) = NaN;
+                        else
+                            eneeig_eV{mm}(bb,kk1,kk2) = NaN;
+                        end
+                    end
+                end
+            end
+        end
     end
 end
 
@@ -163,7 +190,7 @@ end
 savedir = '../output/lattice/';
 savename = ['lattice_' kspecstr '_Ns' num2str(Ns) '_Ncirc' num2str(Ncirc) '_savephi' num2str(savephi) addstr];
 savepath = [savedir savename '.mat'];
-clear eneeig_eV_cell phi_cell tick mm kk strf poolobj numProc_cluster numProc_private LASTppn CurMatPool savename savedir mm kk1 kk2
+clear eneeig_eV_cell phi_cell rho_cell tick mm kk strf poolobj numProc_cluster numProc_private LASTppn CurMatPool savename savedir mm kk1 kk2 bb
 
 save(savepath)
 

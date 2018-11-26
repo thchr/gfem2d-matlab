@@ -103,7 +103,11 @@ if (nargin<4)
    end
 end
 
+%MATLAB generates this warning way too much sometimes: it does not seem to
+%matter - we disable it during meshing and reenable it afterwards
+warning('off','MATLAB:triangulation:PtsNotInTriWarnId'); 
+
 % Assume 1 face containing all edges
 [p,t,~,stats] = meshfaces(node,edge,[],hdata,options);
-
+warning('on','MATLAB:triangulation:PtsNotInTriWarnId');
 end      % mesh2d()

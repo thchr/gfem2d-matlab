@@ -18,3 +18,4 @@ A_atom = sqrt(3)/4*aLC^2;%Area occupied per carbon atom in hexagonal lattice
 vf = sqrt(3)*aLC*tAB_eV/(2*hbar_eV); %Graphene Fermi velocity m/s
 eV2THz = 1/hbar_eV/(2*pi)/1e12; %Converts, upon multiplication, from eV to THz
 a0 = 4*pi*eps0*hbar^2/me/e^2; %Bohr radius in m
+mu0 = 1/(c^2*eps0); % vacuum permeability in SI units

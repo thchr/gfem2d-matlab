@@ -1,4 +1,4 @@
-function [p,t] = geomSquare(a,nside,hdata,plotmesh)
+function [p,t,node,cnct] = geomSquare(a,nside,hdata,plotmesh)
 %CALL:           [p,t] = geomHoleSquare(a,nside,hdata,plotmesh)
 %Create the triangulation data p (points) and t (connectedness) for a
 %square of side 'a' with 'nside' points along the periphery, and
@@ -12,13 +12,13 @@ if nside < 3; error('Number of points per side must be at least 3 in this implem
 %Outer boundary (square)
 step = 2/nside; nsquare = 4*(nside-1);
 node(:,1) = [linspace(-1,1,nside).';
-                linspace(1,1,nside-1).';
-                linspace(1-step,-1,nside-1).';
-                linspace(-1,-1,nside-2).'];
+             linspace(1,1,nside-1).';
+             linspace(1-step,-1,nside-1).';
+             linspace(-1,-1,nside-2).'];
 node(:,2) = [linspace(-1,-1,nside).';
-                linspace(-1+step,1,nside-1).';
-                linspace(1,1,nside-1).';
-                linspace(1-step,-1+step,nside-2).'];
+             linspace(-1+step,1,nside-1).';
+             linspace(1,1,nside-1).';
+             linspace(1-step,-1+step,nside-2).'];
 node = node*(a/2); 
 
 
@@ -27,7 +27,7 @@ cnct = [(1:nsquare).', [(2:nsquare).';1]];
 
 
 %Mesh density via hdata
-if ~exist('hdata','var') || isempty(hdata);
+if ~exist('hdata','var') || isempty(hdata)
     hdata.fun = @(x,y) .1*ones(size(x));
 elseif isnumeric(hdata)
     constval = hdata; hdata = [];

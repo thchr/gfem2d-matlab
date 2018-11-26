@@ -40,7 +40,7 @@ function [eneeig_eV,rhoeig,phieig,misc] = calcEigenEnergiesAny(mesh,models,bloch
 if ~exist('bloch','var') || isempty(bloch)
     bloch.type = '0D';
 end
-if strcmpi(bloch.type,'1D') || strcmpi(bloch.type,'2D');  %If 1D or 2D, we explicitly include zero-energy solutions
+if strcmpi(bloch.type,'1D') || strcmpi(bloch.type,'2D')   %If 1D or 2D, we explicitly include zero-energy solutions
     kzero = all(bloch.k == [0,0]);                        %if k == [0,0] (only relevant for isotropic calculation); there kzero = 1
 else                                                      %If 0D, we don't encounter this scenario, and set kzero = 0
     kzero = 0;
@@ -112,10 +112,9 @@ switch model.type
                 end
             case 'full' %The full local approximation
                 eneeig_eV = zeros(size(zeta)); %Preallocation
-                if ~isfield(model,'kT_eV'); model.kT_eV = []; end
                 guess = 0.1; %arbitrary starting guess
-                for zz = 1:numel(zeta);
-                    zetaf = @(ene_eV) 2*eps0*(ene_eV/hbar_eV)*model.L./imag(conducLRA(ene_eV,model.ef_eV,model.kT_eV));
+                for zz = 1:numel(zeta)
+                    zetaf = @(ene_eV) 2*eps0*(ene_eV/hbar_eV)*model.L./imag(conducLRA(ene_eV,model.ef_eV));
                     eneeig_eV(zz) = fzero(@(ene_eV) real(zetaf(ene_eV) - real(zeta(zz))),guess);
                     guess = eneeig_eV(zz); %Update starting guess
                 end
@@ -147,7 +146,7 @@ switch model.type
         end
         eneeig_eV = lambda*omegac*hbar_eV;
         %Miscellaneous output
-        if nargout == 4; 
+        if nargout == 4
             misc.zetac = zetac;
             misc.omegac_eV = omegac*hbar_eV;
             misc.lambda = lambda;
@@ -165,7 +164,7 @@ switch model.type
         end
         eneeig_eV = lambda*model.ef_eV;
         %Miscellaneous output
-        if nargout == 4; 
+        if nargout == 4 
             misc.zetaf = zetaf; 
             misc.lambda = lambda;
             misc.model = model; 
@@ -181,7 +180,7 @@ end
 %Save requested additional output
 if nargout >= 2
     rhoeig = rhoeig(:,I);
-    if isfield(model,'keep_eV'); rhoeig = rhoeig(:,I2); end;
+    if isfield(model,'keep_eV'); rhoeig = rhoeig(:,I2); end
 end
 if nargout >= 3; phieig = V*rhoeig; end
 
@@ -211,7 +210,7 @@ else
 end
 
 fprintf(' solved in ') %Print solve-time for eigenvalue problem
-if toc(ticpeig) > 60; fprintf('%.1f min\n',toc(ticpeig)/60); else fprintf('%.1f sec\n',toc(ticpeig)); end;
+if toc(ticpeig) > 60; fprintf('%.1f min\n',toc(ticpeig)/60); else fprintf('%.1f sec\n',toc(ticpeig)); end
 
 %% ------------------------------------------------------------------------
 function [lambda,eigrho] = wrapBerryEigen(V,DL,DRi,DRa,zetaf,model)
@@ -239,4 +238,4 @@ else
 end
 
 fprintf(' solved in ') %Print solve-time for eigenvalue problem
-if toc(ticpeig) > 60; fprintf('%.1f min\n',toc(ticpeig)/60); else fprintf('%.1f sec\n',toc(ticpeig)); end;
+if toc(ticpeig) > 60; fprintf('%.1f min\n',toc(ticpeig)/60); else fprintf('%.1f sec\n',toc(ticpeig)); end
