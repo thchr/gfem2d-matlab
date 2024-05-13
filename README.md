@@ -1,10 +1,10 @@
 A finite-element-like method for 2D plasmonics, especially graphene, implemented in Matlab.
 
-See examples in `/execute/` and `/test/`. This is an archival upload, and little or no documentation is provided.
+See examples in `/execute/` and `/tests/`. This is an archival upload, and little or no documentation is provided.
 
 ---
 
-The implementation and algorithm is based on:
+The implementation and algorithm are based on:
 
 > Dafei Jin, Thomas Christensen, Marin Soljačić, Nicholas X. Fang, Ling Lu, & Xiang Zhang, [Phys. Rev. Lett. **118**, 245301 (2017)](https://doi.org/10.1103/PhysRevLett.118.245301).
 
